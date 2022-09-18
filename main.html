@@ -1,0 +1,46 @@
+<html>
+<style>
+ body {  
+background-image: url("https://www.teahub.io/photos/full/43-434733_1082x1920-plain-white-background-wallpaper-vertical-blue-and.jpg");
+background-repeat: no-repeat;
+background-attachment: fixed; 
+background-size: 100% 100%; }
+ button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 31px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 3px 1px;}
+ button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;}
+
+button:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+</style>
+    <body>
+        <h1>HI, CRUSH </h1>
+        <img src="https://c.tenor.com/-Qq0R9rKNzUAAAAi/panda-bear.gif">
+        <h1>KELAN MOKO I C-CRUSH BACK???</h1>
+		<a href="outcome_1.html">
+        <button id='btn_yes'>Ngayon na</button>&nbsp;
+		</a>
+        <button id='btn_no' onclick='no(this)' style='position:absolute'>Never</button>
+    </body>
+    <script>
+        function no(id){
+            var yes = document.getElementById('btn_yes');
+            var i = Math.floor(Math.random()*400)+1;
+            var j = Math.floor(Math.random()*200)+yes.offsetTop;
+            id.style.left = i+'px';
+            id.style.top = j+'px'; }
+    </script>
+</html>
